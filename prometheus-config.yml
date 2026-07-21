@@ -1,8 +1,21 @@
+# global:
+#   scrape_interval: 4s
+
+# scrape_configs:
+#   - job_name: "prometheus"
+#     static_configs:
+#       - targets:
+#           - "10.115.176.33:8000"
+
+
+
 global:
   scrape_interval: 4s
 
 scrape_configs:
-  - job_name: "prometheus"
+  - job_name: "servers"
     static_configs:
       - targets:
           - "10.115.176.33:8000"
+          - "10.115.176.34:8000"
+          - "10.115.176.35:8000"
